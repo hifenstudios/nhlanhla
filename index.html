@@ -657,13 +657,16 @@
     </div>
   </div>
   <div class="fade-up">
-    <div class="contact-form">
-      <input type="text" placeholder="Your Name"/>
-      <input type="email" placeholder="Your Email"/>
-      <input type="text" placeholder="Business Name"/>
-      <textarea placeholder="Tell us about your project..."></textarea>
-      <button class="btn-primary" style="cursor:pointer; border:none; width:fit-content;" onclick="handleContact(this)">Send Message</button>
-    </div>
+<form class="contact-form" action="https://formspree.io/f/xreobalw" method="POST">
+  <input type="text" name="name" placeholder="Your Name" required/>
+  <input type="email" name="email" placeholder="Your Email" required/>
+  <input type="text" name="business" placeholder="Business Name"/>
+  <textarea name="message" placeholder="Tell us about your project..." required></textarea>
+  <button type="submit" class="btn-primary" style="border:none; width:fit-content; cursor:pointer;">
+    Send Message
+  </button>
+</form>
+
   </div>
 </section>
 
